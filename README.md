@@ -152,6 +152,14 @@ URL to the `authenticate` method:
 client.authenticate :token => "my-oauth-token", :instance_url => "http://na1.salesforce.com"  #=> "my-oauth-token"
 ```
 
+### Authentication via an externally-acquired session id
+
+You can authenticate with an externally-acquired session id just as you would with an externally-acquired OAuth access token.
+
+```ruby
+client.authenticate :token => "my-session-id", :instance_url => "http://na1.salesforce.com"  #=> "my-session-id"
+```
+
 ### Authentication via Omniauth
 
 If you are using the gem within the context of a web application, and your web app is using Omniauth
